@@ -1,0 +1,125 @@
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script>
+//Функция показа
+	function show(state)
+	{
+	document.getElementById('window').style.display = state;	
+	document.getElementById('gray').style.display = state; 		
+	}	
+</script> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PersonalPage</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Subdex Bold&family=Open+Sans&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header id="header" class="header">
+		<div class="container">
+			<div class="nav">
+			
+				<ul class="menu">
+					<li>
+						<a href="#">
+							Главная
+						</a>
+					</li>
+					<li>
+						<a href="#about">
+							Информация
+						</a>
+					</li>
+					<li>
+						<a href="#" onclick="show('block')">
+							Регистрация
+						</a>
+					</li>
+				</ul>
+				<a href="tel:+375336816432" class="tel">
+					+375 33 6816432
+				</a>
+				
+
+
+<div id="window">
+    <!-- Картинка крестика -->
+    <img class="close" src="img/close.png" alt=""  onclick="show('none')">
+    <div class="form">
+        <h4>Регистрация</h4>
+        <form action="index.html" name="f1">
+            <input type="text" placeholder="Имя" name="name1" class="input">
+            <input type="text" placeholder="Фамилия" name="name2" class="input">
+            <input type="email" placeholder="Емеил" name="email1" class="input">
+            <input type="email" placeholder="Подтвердите адрес Электронной Почты" name="email2" class="input">
+            <input type="password" placeholder="Пароль" name="pass1" class="input">
+            <input type="password" placeholder="Подтвердите пароль" name="pass2" class="input">
+            <input type='tel' placeholder="Мобильный телефон" name="tel" class="input">
+            <input type="radio" name="radio1"> Мужчина <input type="radio" name="radio1" class="radio"> Женщина
+            <input type="submit" value="Регистрация" name="sab" class="input"> Нажимая «Регистрация», вы подтверждаете, что прочитали и согласны с нашими Условиями Пользования и Политикой Конфиденциальности.
+        </form>
+
+    </div>
+</div>
+
+
+				
+				<button class="menu-open">
+					<img src="img/menu.svg" alt="Open menu">
+				</button>
+			</div>
+			<div class="offer">
+				<h1>
+					Морозов 
+				</h1>
+				<h1>
+					Виталий
+				</h1>
+				<a href="#about" class="btn">Обо мне</a>
+			</div>
+		</div>
+	</header>
+	<section id="about" class="about">
+		<div class="container">
+			<h2>Немного обо мне</h2>
+			<div class="description">
+				<div class="desc-left">
+					<h3>Общая информация</h3>
+					<p>
+						Морозов Виталий, родной город Новополоцк. Обучался в "Базовой школе №10 г.Новополоцка". На данный момент студент Полоцкого государтсвенного университета, факультета информационных технологий.
+					</p>
+				</div>
+				<div class="desc-right">
+					<h3>Личная информация</h3>
+					<p>
+						В свободное время обрабатываю фотографии и занимаюсь монтажом видео. Что касается видов спорта, предпочитаю кататься на роликах или коньках, а также кататься на велосипеде. Стараюсь развиваться всесторонне, люблю получать новые знания.
+					</p>
+				</div>			
+			</div>
+			<div class="gallery">
+				<img src="img/img1.jpg" alt="Event photo 1">
+				<img src="img/img2.jpg" alt="Event photo 2">
+				<img src="img/img3.jpg" alt="Event photo 3">
+			</div>
+		</div>
+	</section>
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="footer-text">
+				<p>
+					Ph: @yur.ph
+				</p>
+				
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
